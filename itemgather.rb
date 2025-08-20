@@ -9,7 +9,7 @@ API_KEY = "Place_API_Key_Here" # <-- put your full key
 CATEGORY = 15
 LIMIT = 100
 MAX_CALLS_PER_DAY = 5000
-SECONDS_BETWEEN_CALLS = 2.5
+SECONDS_BETWEEN_CALLS = 5
 CSV_FILE = "item_buys.csv"
 STARTING_TIMESTAMP = 1704096000 # stop when older than this
 
@@ -220,5 +220,6 @@ else
     merged_uniq.each { |row| csv << row }
   end
 end
+
 
 puts "Finished gathering. Total calls: #{calls}, total new rows added: #{total_added}"
